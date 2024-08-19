@@ -1,24 +1,41 @@
 //
 //  ContentView.swift
-//  Bang
+//  Athan
 //
-//  Created by Harem on 19/08/2024.
-//
+//  Created by Harem on 14/08/2024.
+//  Create GitHub in 19/8/2024
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        ZStack{
+            BackgroundView()
+
+            ScrollView{
+                VStack{
+                    BangSummaryView()
+                    PraytimeView()
+                }
+                .padding()
+            }
         }
-        .padding()
+        
     }
 }
+    
+     
+    
+    
 
-#Preview {
-    ContentView()
-}
+        #Preview {
+            ContentView()
+        }
+    
+//    struct ContentView_Previews: PreviewProvider{
+//        static var previews: some View {
+//            ContentView()
+//
+//        }
+//    }
