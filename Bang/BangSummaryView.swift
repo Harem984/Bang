@@ -23,11 +23,13 @@ struct BangSummaryView: View {
                     Text("سلێمانی")
                         .font(.system(size: 36, weight: .medium, design: .default))
                         .foregroundStyle(Color.white)
-                        .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
-//                        .shadow(radius: 2.0)
                         .padding()
                         
                 } // HStack
+                .shadow(color: Color.primary.opacity(0.3), /// shadow color
+                        radius: 3, /// shadow radius
+                        x: 0, /// x offset
+                        y: 2) /// y offset
                 .padding(.bottom, 60)
                 
                
@@ -36,7 +38,10 @@ struct BangSummaryView: View {
             .foregroundStyle(.white)
             .opacity(0.8)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-                        .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+                        .shadow(color: Color.primary.opacity(0.3), /// shadow color
+                                radius: 3, /// shadow radius
+                                x: 0, /// x offset
+                                y: 2) /// y offset
 
                         .padding(.horizontal, 50)
                     Divider()
@@ -48,21 +53,25 @@ struct BangSummaryView: View {
                         Text("3:50 PM")
                             .font(.system(size: 36, weight: .medium, design: .default))
                             .foregroundStyle(.white)
-                            .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+                            
                         Spacer()
 
                         Text(" بەیانی")
                             .font(.system(size: 36, weight: .medium, design: .default))
                             .foregroundStyle(.white)
-                            .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+                           
 
                         Image(systemName: "sunrise")
                             .renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 36, height: 36)
-                            .shadow(radius: 2.0)
+                            
                     } // HStack
+                    .shadow(color: Color.primary.opacity(0.3), /// shadow color
+                            radius: 3, /// shadow radius
+                            x: 0, /// x offset
+                            y: 2) /// y offset
                     .padding(.horizontal)
             .padding(.bottom, 40)
                

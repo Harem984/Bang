@@ -21,7 +21,10 @@ struct PraytimeView: View {
             } // HStack
             .foregroundStyle(.white)
             .opacity(0.6)
-            .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+            .shadow(color: Color.primary.opacity(0.3), /// shadow color
+                    radius: 3, /// shadow radius
+                    x: 0, /// x offset
+                    y: 2) /// y offset
 
             .padding(.top, 10)
            
@@ -34,7 +37,7 @@ struct PraytimeView: View {
                         .font(Font.system(size: 28))
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)
-                        .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+                        
 
                     Spacer()
                     Text("بەیانی")
@@ -46,6 +49,10 @@ struct PraytimeView: View {
                         .bold()
                         .foregroundStyle(.yellow)
                 } // HStack
+                .shadow(color: Color.primary.opacity(0.3), /// shadow color
+                        radius: 3, /// shadow radius
+                        x: 0, /// x offset
+                        y: 2) /// y offset
                 Divider()
             } // ForEach
         } // VStack
