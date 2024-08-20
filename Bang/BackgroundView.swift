@@ -10,8 +10,8 @@ import SwiftUI
 struct BackgroundView: View {
     var body: some View {
         ZStack{
-            LinearGradient(colors: [Color(red: 0.23, green: 0.33, blue: 0.80),
-                                    Color(red: 0.70, green: 0.53, blue: 0.58)],
+            LinearGradient(colors: [Color(red: 0.1, green: 0.35, blue: 0.6),
+                                    Color(red: 0.8, green: 0.7, blue: 0.6)],
                                           startPoint: .top, endPoint: .bottom)
             .ignoresSafeArea()
         }

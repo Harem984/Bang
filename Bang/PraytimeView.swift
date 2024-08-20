@@ -14,12 +14,15 @@ struct PraytimeView: View {
             
             HStack {
                 Text ("کاتەکانی بانگی ئەمڕۆ")
-                    .font(Font.system(size: 12))
-                    .fontWeight(.medium)
+                    .font(Font.system(size: 20))
+                    .fontWeight(.semibold)
                 Image(systemName: "calendar")
                     
             } // HStack
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.white)
+            .opacity(0.6)
+            .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+
             .padding(.top, 10)
            
             Divider()
@@ -27,14 +30,16 @@ struct PraytimeView: View {
             ForEach(0..<5) { _ in
                 
                 HStack {
-                    Text("3:45")
-                        .font(Font.system(size: 20))
+                    Text("3:45   AM")
+                        .font(Font.system(size: 28))
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)
+                        .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+
                     Spacer()
                     Text("بەیانی")
-                        .font(Font.system(size: 20))
-                        .fontWeight(.semibold)
+                        .font(Font.system(size: 28))
+                        .fontWeight(.medium)
                         .foregroundStyle(.white)
                     Image(systemName: "sunrise")
                         .renderingMode(.original)

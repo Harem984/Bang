@@ -12,50 +12,55 @@ struct BangSummaryView: View {
         
             
                 HStack{
-                    Image(systemName: "mappin.square")
-                        .renderingMode(.template)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 32, height: 32)
+                    Image(systemName: "location.fill")
+                        .foregroundStyle(Color.white)
+//                        .renderingMode(.template)
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+                        .font(.system(size: 26))
                     
                     
                     Text("سلێمانی")
-                        .font(.system(size: 25, weight: .medium, design: .default))
-                        .foregroundColor(.black)
+                        .font(.system(size: 36, weight: .medium, design: .default))
+                        .foregroundStyle(Color.white)
+                        .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+//                        .shadow(radius: 2.0)
                         .padding()
-                        .shadow(radius: 1.0)
+                        
                 } // HStack
                 .padding(.bottom, 60)
                 
                
                     Text("بانگی داهاتوو")
-                        .font(.body)
-                        .foregroundStyle(.secondary)
-                        .shadow(radius: 1.0)
+            .font(.system(size: 20, weight: .medium, design: .default))
+            .foregroundStyle(.white)
+            .opacity(0.8)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                        .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+
                         .padding(.horizontal, 50)
                     Divider()
                         .frame(width: 310)
-//                        .padding(.bottom, 10)
+        //                        .padding(.bottom, 10)
                     
                     HStack{
                         
                         Text("3:50 PM")
-                            .font(.system(size: 32, weight: .medium, design: .default))
+                            .font(.system(size: 36, weight: .medium, design: .default))
                             .foregroundStyle(.white)
-                            .shadow(radius: 2.0)
+                            .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
                         Spacer()
 
                         Text(" بەیانی")
-                            .font(.system(size: 32, weight: .medium, design: .default))
+                            .font(.system(size: 36, weight: .medium, design: .default))
                             .foregroundStyle(.white)
-                            .shadow(radius: 2.0)
-                        
+                            .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+
                         Image(systemName: "sunrise")
                             .renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 32, height: 32)
+                            .frame(width: 36, height: 36)
                             .shadow(radius: 2.0)
                     } // HStack
                     .padding(.horizontal)
